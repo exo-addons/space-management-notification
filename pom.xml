@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>addons-parent-pom</artifactId>
+        <groupId>org.exoplatform.addons</groupId>
+        <version>2</version>
+        <relativePath />
+    </parent>
+    <groupId>org.exoplatform.addons.spaceManagement</groupId>
+    <artifactId>spaceManagementNotification</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Space Notification Portlet eXo Platform 4</name>
+    <description>Space Notification Portlet eXo Platform 4</description>
+    <developers>
+        <developer>
+            <id>romain.denarie</id>
+            <name>Romain Dénarié</name>
+            <email>romain.denarie@exoplatform.com</email>
+            <roles>
+                <role>Owner</role>
+            </roles>
+        </developer>
+    </developers>
+    <modules>
+        <module>exo-addons-portlets-spaceManagementNotification-service</module>
+        <module>exo-addons-portlets-spaceManagementNotification-webapps</module>
+        <module>exo-addons-portlets-spaceManagementNotification-pkg</module>
+
+    </modules>
+    <!--scm>
+      <connection>scm:git:git://github.com/exo-addons/portlet-pack.git</connection>
+      <developerConnection>scm:git:git@github.com:exo-addons/portlet-pack.git</developerConnection>
+      <url>https://github.com/exo-addons/portlet-pack</url>
+      <tag>HEAD</tag>
+    </scm-->
+    <properties>
+        <!-- 3rd party libraries versions -->
+        <exoplatform.version>4.0.5</exoplatform.version>
+        <juzu.version>0.6.0</juzu.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- Import versions from platform project -->
+            <dependency>
+                <groupId>org.exoplatform.platform</groupId>
+                <artifactId>platform</artifactId>
+                <version>${exoplatform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.juzu</groupId>
+                <artifactId>juzu-bom-core</artifactId>
+                <version>${juzu.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.juzu</groupId>
+                <artifactId>juzu-core</artifactId>
+                <version>${juzu.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.juzu</groupId>
+                <artifactId>juzu-core</artifactId>
+                <version>${juzu.version}</version>
+                <classifier>sources</classifier>
+            </dependency>
+            <dependency>
+                <groupId>org.juzu</groupId>
+                <artifactId>juzu-plugins-less</artifactId>
+                <version>${juzu.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.juzu</groupId>
+                <artifactId>juzu-plugins-portlet</artifactId>
+                <version>${juzu.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.juzu</groupId>
+                <artifactId>juzu-plugins-upload</artifactId>
+                <version>${juzu.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
