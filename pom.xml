@@ -9,7 +9,7 @@
     </parent>
     <groupId>org.exoplatform.addons.spaceManagement</groupId>
     <artifactId>spaceManagementNotification</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Space Notification Portlet eXo Platform 4</name>
     <description>Space Notification Portlet eXo Platform 4</description>
@@ -33,7 +33,7 @@
       <connection>scm:git:https://github.com/exo-addons/space-management-notification.git </connection>
       <developerConnection>scm:git:https://github.com/exo-addons/space-management-notification.git </developerConnection>
       <url>https://github.com/exo-addons/space-management-notification.git </url>
-      <tag>v1.0.1</tag>
+      <tag>HEAD</tag>
     </scm>
     <properties>
         <!-- 3rd party libraries versions -->

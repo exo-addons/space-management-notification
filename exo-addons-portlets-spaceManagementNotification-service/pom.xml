@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.exoplatform.addons.spaceManagement</groupId>
 		<artifactId>spaceManagementNotification</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.2-SNAPSHOT</version>
 	</parent>
 	<artifactId>exo-addons-portlets-spaceManagementNotification-service</artifactId>
 	<packaging>jar</packaging>
