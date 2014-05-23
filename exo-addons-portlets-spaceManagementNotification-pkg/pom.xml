@@ -4,7 +4,7 @@
     <parent>
 	<groupId>org.exoplatform.addons.spaceManagement</groupId>
         <artifactId>spaceManagementNotification</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.1</version>
     </parent>
     <artifactId>exo-addons-portlets-spaceManagementNotification-pkg</artifactId>
     <packaging>pom</packaging>
