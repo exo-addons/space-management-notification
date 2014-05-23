@@ -29,12 +29,12 @@
         <module>exo-addons-portlets-spaceManagementNotification-pkg</module>
 
     </modules>
-    <!--scm>
-      <connection>scm:git:git://github.com/exo-addons/portlet-pack.git</connection>
-      <developerConnection>scm:git:git@github.com:exo-addons/portlet-pack.git</developerConnection>
-      <url>https://github.com/exo-addons/portlet-pack</url>
+    <scm>
+      <connection>scm:git:https://github.com/exo-addons/space-management-notification.git </connection>
+      <developerConnection>scm:git:https://github.com/exo-addons/space-management-notification.git </developerConnection>
+      <url>https://github.com/exo-addons/space-management-notification.git </url>
       <tag>HEAD</tag>
-    </scm-->
+    </scm>
     <properties>
         <!-- 3rd party libraries versions -->
         <exoplatform.version>4.0.5</exoplatform.version>
