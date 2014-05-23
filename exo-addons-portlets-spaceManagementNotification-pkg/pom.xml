@@ -15,11 +15,14 @@
             <artifactId>exo-addons-portlets-spaceManagementNotification-webapps</artifactId>
             <type>war</type>
             <scope>provided</scope>
+            <version>${project.version}</version>
+
         </dependency>
         <dependency>
             <groupId>org.exoplatform.addons.spaceManagement</groupId>
             <artifactId>exo-addons-portlets-spaceManagementNotification-service</artifactId>
             <type>jar</type>
+            <version>${project.version}</version>
 
             <scope>provided</scope>
         </dependency>
