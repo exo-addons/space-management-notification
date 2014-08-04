@@ -143,7 +143,7 @@ require( ["SHARED/jquery"], function ($)
 
 
                     $("#"+item.spaceId+"-"+user.username+" a.connect").live("click", function(){
-                        $.getJSON("/rest/spacemanagementinformation/request/confirm/"+item.spaceId+"/"+user, null);
+                        $.getJSON("/rest/spacemanagementinformation/request/confirm/"+item.spaceId+"/"+user.username, null);
 
                         if($("#requestedUsers-"+item.spaceId).children().length == 1) {
                             //plus de user a valider dans spaceId
