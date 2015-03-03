@@ -39,7 +39,7 @@ public class SpaceManagementNotification {
     Template index;
 
     @View
-    public void index() {
-        index.render();
+    public Response.Content index() {
+        return index.ok();
     }
 }

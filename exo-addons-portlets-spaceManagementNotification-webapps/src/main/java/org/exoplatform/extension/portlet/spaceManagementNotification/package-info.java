@@ -19,23 +19,21 @@
 
 @Portlet
 @Application(name = "SpaceManagementNotification")
-@Assets(
-        scripts = {
-                @Script(id = "spaceManagementNotification", src = "js/spacemanagementnotification.js")
-
-        },
-        stylesheets = {
-                @Stylesheet(src = "skin/spaceManagementNotification.css", location = AssetLocation.APPLICATION)
-        }
-
-)
+@Scripts({
+        @Script(id = "spaceManagementNotification", value = "js/spacemanagementnotification.js")
+})
+@Stylesheets ({
+                @Stylesheet(value = "/org/exoplatform/extension/portlet/spaceManagementNotification/assets/skin/spaceManagementNotification.css")
+})
 @Less("skin/spaceManagementNotification.less")
+@Assets("*")
 
 package org.exoplatform.extension.portlet.spaceManagementNotification;
 
 import juzu.Application;
-import juzu.asset.AssetLocation;
 import juzu.plugin.asset.Assets;
+import juzu.plugin.asset.Stylesheets;
+import juzu.plugin.asset.Scripts;
 import juzu.plugin.asset.Script;
 import juzu.plugin.asset.Stylesheet;
 import juzu.plugin.less.Less;

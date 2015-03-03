@@ -4,38 +4,28 @@
     <parent>
         <groupId>org.exoplatform.addons.spaceManagement</groupId>
         <artifactId>spaceManagementNotification</artifactId>
-        <version>1.0.3-SNAPSHOT</version>
+        <version>1.1.0-SNAPSHOT</version>
     </parent>
     <artifactId>exo-addons-portlets-spaceManagementNotification-webapps</artifactId>
     <packaging>war</packaging>
   <name>eXo Platform - HomePage Portlets</name>
   <dependencies>
 
-   
-    <dependency>
-      <groupId>org.exoplatform.commons</groupId>
-      <artifactId>commons-juzu</artifactId>
-      <scope>provided</scope>
-    </dependency>
-    
+      <dependency>
+          <groupId>org.exoplatform.commons</groupId>
+          <artifactId>commons-juzu</artifactId>
+          <scope>provided</scope>
+      </dependency>
       <dependency>
           <groupId>org.juzu</groupId>
-          <artifactId>juzu-bom-core</artifactId>
+          <artifactId>juzu-plugins-less</artifactId>
           <scope>provided</scope>
-
       </dependency>
-
-    <dependency>
-      <groupId>org.juzu</groupId>
-      <artifactId>juzu-plugins-less</artifactId>
-        <scope>provided</scope>
-
-    </dependency>
-    <dependency>
-      <groupId>org.juzu</groupId>
-      <artifactId>juzu-plugins-portlet</artifactId>
-      <scope>provided</scope>
-    </dependency>
+      <dependency>
+          <groupId>org.juzu</groupId>
+          <artifactId>juzu-plugins-portlet</artifactId>
+          <scope>provided</scope>
+      </dependency>
 
   </dependencies>
   <build>
