@@ -54,7 +54,7 @@ require( ["SHARED/jquery"], function ($)
                         link += "<li class='clearfix spaceNotifLi' style='display:none;' id='" + item.spaceId + "'>";
                     var spaceAvatar;
                     if (item.spaceAvatarUrl == undefined)
-                        spaceAvatar = "/social-resources/skin/images/ShareImages/UserAvtDefault.png";
+                        spaceAvatar = "/eXoSkin/skin/images/themes/default/social/skin/ShareImages/UserAvtDefault.png";
                     else
                         spaceAvatar = item.spaceAvatarUrl;
                     link += "<div class='spaceInvitePicture pull-left avatarXSmall'><img src='" + spaceAvatar + "'></div>";
@@ -82,7 +82,7 @@ require( ["SHARED/jquery"], function ($)
                         var peopleAvatar;
                         var userLink = "";
                         if (user.userAvatarUrl == undefined)
-                            peopleAvatar = "/social-resources/skin/images/ShareImages/UserAvtDefault.png";
+                            peopleAvatar = "/eXoSkin/skin/images/themes/default/social/skin/ShareImages/UserAvtDefault.png";
                         else
                             peopleAvatar = user.userAvatarUrl;
 
