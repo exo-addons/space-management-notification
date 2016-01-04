@@ -1,35 +1,24 @@
 package org.exoplatform.extension.spacemanagementnotification;
 
-import javax.ws.rs.Path;
-import javax.ws.rs.GET;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.SecurityContext;
-import javax.ws.rs.core.UriInfo;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status;
-import javax.ws.rs.core.CacheControl;
-import javax.ws.rs.Produces;
-
+import org.exoplatform.common.http.HTTPStatus;
+import org.exoplatform.services.log.ExoLogger;
+import org.exoplatform.services.log.Log;
 import org.exoplatform.services.rest.resource.ResourceContainer;
 import org.exoplatform.social.core.identity.model.Identity;
 import org.exoplatform.social.core.identity.provider.OrganizationIdentityProvider;
-import org.exoplatform.social.core.space.spi.SpaceService;
+import org.exoplatform.social.core.manager.IdentityManager;
 import org.exoplatform.social.core.space.SpaceException;
 import org.exoplatform.social.core.space.model.Space;
-import org.exoplatform.services.security.ConversationState;
+import org.exoplatform.social.core.space.spi.SpaceService;
 import org.exoplatform.social.service.rest.Util;
-import org.exoplatform.social.core.manager.IdentityManager;
 
-
-import java.util.List;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.*;
 import java.util.ArrayList;
-
-import org.exoplatform.common.http.HTTPStatus;
-
-import org.exoplatform.services.log.ExoLogger;
-import org.exoplatform.services.log.Log;
+import java.util.List;
 
 
 @Path("/spacemanagementinformation")

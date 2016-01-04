@@ -21,9 +21,9 @@ package org.exoplatform.extension.portlet.spaceManagementNotification;
 
 import juzu.Path;
 import juzu.Response;
+import juzu.SessionScoped;
 import juzu.View;
 import juzu.template.Template;
-import juzu.SessionScoped;
 
 import javax.inject.Inject;
 
