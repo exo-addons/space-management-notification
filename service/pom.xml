@@ -8,7 +8,7 @@
   </parent>
   <artifactId>space-management-notification-service</artifactId>
   <packaging>jar</packaging>
-  <name>eXo Platform - addons - Space management notification - services</name>
+  <name>Space Management Notification - services</name>
   <description>eXo Platform - addons - Space management notification - services</description>
   <dependencies>
     <dependency>

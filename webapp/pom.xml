@@ -8,7 +8,7 @@
   </parent>
   <artifactId>space-management-notification-webapp</artifactId>
   <packaging>war</packaging>
-  <name>eXo Platform - HomePage Portlets</name>
+  <name>Space Management Notification - webapp</name>
   <dependencies>
     <dependency>
       <groupId>org.exoplatform.commons</groupId>

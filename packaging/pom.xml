@@ -8,7 +8,7 @@
   </parent>
   <artifactId>space-management-notification-packaging</artifactId>
   <packaging>pom</packaging>
-  <name>eXo Addons - Space Management notification</name>
+  <name>Space Management Notification - packaging</name>
   <dependencies>
     <dependency>
       <groupId>org.exoplatform.addons.space-management-notification</groupId>
