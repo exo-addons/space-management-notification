@@ -13,14 +13,12 @@
     <dependency>
       <groupId>org.exoplatform.addons.space-management-notification</groupId>
       <artifactId>space-management-notification-webapp</artifactId>
-      <version>${project.version}</version>
       <type>war</type>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.exoplatform.addons.space-management-notification</groupId>
       <artifactId>space-management-notification-service</artifactId>
-      <version>${project.version}</version>
       <type>jar</type>
       <scope>provided</scope>
     </dependency>

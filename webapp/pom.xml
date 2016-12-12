@@ -27,6 +27,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>spaceManagement-portlets</finalName>
+    <finalName>space-management-notification-portlets</finalName>
   </build>
 </project>

@@ -4,7 +4,7 @@
   <parent>
     <artifactId>addons-parent-pom</artifactId>
     <groupId>org.exoplatform.addons</groupId>
-    <version>6</version>
+    <version>7-RC01</version>
     <relativePath />
   </parent>
   <groupId>org.exoplatform.addons.space-management-notification</groupId>
@@ -34,15 +34,41 @@
     <tag>HEAD</tag>
     <url>https://github.com/exo-addons/space-management-notification.git</url>
   </scm>
+  <properties>
+    <!-- **************************************** -->
+    <!-- Dependencies versions -->
+    <!-- **************************************** -->
+    <org.exoplatform.platform.version>4.4.0-RC03</org.exoplatform.platform.version>
+    <javax.ws.rs.version>1.0</javax.ws.rs.version>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <!-- Import versions from platform project -->
       <dependency>
         <groupId>org.exoplatform.platform</groupId>
         <artifactId>platform</artifactId>
-        <version>4.4.0-RC03</version>
+        <version>${org.exoplatform.platform.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <!-- Declare our own artifacts -->
+      <dependency>
+        <groupId>org.exoplatform.addons.space-management-notification</groupId>
+        <artifactId>space-management-notification-service</artifactId>
+        <version>${project.version}</version>
+        <type>jar</type>
+      </dependency>
+      <dependency>
+        <groupId>org.exoplatform.addons.space-management-notification</groupId>
+        <artifactId>space-management-notification-webapp</artifactId>
+        <version>${project.version}</version>
+        <type>war</type>
+      </dependency>
+      <!-- Other dependencies -->
+      <dependency>
+        <groupId>javax.ws.rs</groupId>
+        <artifactId>javax.ws.rs</artifactId>
+        <version>${javax.ws.rs.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
