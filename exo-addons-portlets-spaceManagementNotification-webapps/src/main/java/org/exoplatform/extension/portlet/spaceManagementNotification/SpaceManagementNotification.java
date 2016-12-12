@@ -29,7 +29,6 @@ import javax.inject.Inject;
 
 /**
  * @author <a href="hzekri@exoplatform.com">hzekri</a>
- * @date 10/12/12
  */
 @SessionScoped
 public class SpaceManagementNotification {
