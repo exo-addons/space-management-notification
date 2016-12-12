@@ -13,7 +13,7 @@ Checkout the code, go at root folder and type
 
     mvn clean install
   
-In exo-addons-portlets-spaceManagementNotification-pkg/target, a zip is created. Copy it and unzip it in your eXo installation, in extensions folder. Then type
+In packaging/target, a zip is created. Copy it and unzip it in your eXo installation, in extensions folder. Then type
 
     ./extension.sh -i spaceManagementNotification
 
